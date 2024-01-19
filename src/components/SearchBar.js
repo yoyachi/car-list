@@ -1,5 +1,5 @@
 function SearchBar ({ onSubmit }) {
-    const [term, useTerm] = useState('');
+    const [term, setTerm] = useState('');
     //create an event handler
     const handleFormSubmit = (event) => {
         //when handling "form submission event" to prevent default behavior calling the URL we code:
@@ -9,7 +9,7 @@ function SearchBar ({ onSubmit }) {
 
     };
 
-    const hadleChange = (event) => {
+    const handleChange = (event) => {
         setTerm(event.target.value);
     };
 
